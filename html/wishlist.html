@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/wishlist.css">
+     <!----   ion icon link   -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <a href="./index.html">EzyMart</a>
+        </div>
+        <div class="nav-middle">
+             <div class="all">All
+                <ion-icon name="caret-down-outline" style="width: 10px;"></ion-icon>
+             </div>
+             <input type="search" class="search-bar" placeholder="Search Products">
+             <button class="search-btn"><img src="../asset/icons/search-icon.png" alt=""></button>
+        </div>
+        <div class="nav-right">
+            <div class="deliver-to">
+                <span class="deliver">
+                <ion-icon name="location-sharp" style="width: 30px; height: 20px;"></ion-icon>India</span>
+            </div>
+            <div class="info">
+                <a href="#" class="link">Hello, Gokul</a>
+                <a class="info_items info_items_wishlist" href="./wishlist.html">WISHLIST</a>
+            </div>
+             <div class="return-order-label">
+                 <p class="return-label">ORDERS</p>
+             </div>
+             <a class="cart-btn" href="./cart.html">
+                 <img src="../asset/icons/cart-icon.png" alt="">
+                 <div class="cart-count">0</div>
+                 <span class="cart-label" >Cart</span>
+             </a>
+        </div>
+        </header>
+    
+    <main id="main">
+        <div class="shopping-cart">
+           <div class="shopping-title">Wishlist <span class="list-count">(0)</span></div>
+           <div class="shopping-content">
+                <div class="shopping-list"></div>
+           </div>
+        </div>
+    </main>
+  
+    <script src="../asset/data/product.js"></script>
+    <script src="../js/amazon.js"></script>
+    <script src="../js/wishlist.js"></script>
+</body>
+
+</html> 

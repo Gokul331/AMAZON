@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/buy.css">
+     <!----   ion icon link   -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <a href="./index.html">EzyMart</a>
+        </div>
+        <div class="nav-middle">
+             <div class="all">All
+                <ion-icon name="caret-down-outline" style="width: 10px;"></ion-icon>
+             </div>
+             <input type="search" class="search-bar" placeholder="Search Products">
+             <button class="search-btn"><img src="../asset/icons/search-icon.png" alt=""></button>
+        </div>
+        <div class="nav-right">
+            <div class="deliver-to">
+                <span class="deliver">
+                <ion-icon name="location-sharp" style="width: 30px; height: 30px;"></ion-icon>India</span>
+            </div>
+            <div class="info">
+                <a href="#" class="link">Hello, Gokul</a>
+                <a class="info_items info_items_wishlist" href="./wishlist.html">WISHLIST</a>
+            </div>
+             <div class="return-order-label">
+                 <p class="return-label">ORDERS</p>
+             </div>
+             <a class="cart-btn" href="./cart.html">
+                 <img src="../asset/icons/cart-icon.png" alt="">
+                 <div class="cart-count">0</div>
+                 <span class="cart-label" >Cart</span>
+             </a>
+        </div>
+        </header>
+    
+    <main>
+        <div class="header">
+            <div class="menu">
+                <div class="count item1">1</div>
+                <div class="menu-title">Address</div>
+            </div>
+            <span class="sep"></span>
+            <div class="menu">
+                <div class="count item2">2</div>
+                <div class="menu-title">Order Details</div>
+            </div>
+            <span class="sep"></span>
+            <div class="menu">
+                <div class="count item3">3</div>
+                <div class="menu-title">Payment</div>
+            </div>
+        </div>
+        <div class="address">
+            <div class="newaddress">
+                <ion-icon class="plus"name="add-circle-outline"></ion-icon> 
+                <span>Add a new address</span>
+            </div>
+          <div class="address-display">
+          </div> 
+          <div class="selectAddress">
+          </div> 
+          
+        <div class="address-box">
+            <div style="font-weight: bold; font-size: 20px;">New Address</div>
+            <div class="cancel"><ion-icon name="close"></ion-icon></div>
+            <div class="address-items">
+                <input type="text" id="name"  required>
+                <label for="name" class="address-label">Full Name</label>
+            </div>
+            <div class="address-items">
+                <input type="number" name="" id="phone" required>
+                <label for="phone" class="address-label">Phone Number</label>
+            </div>
+            <div class="address-items alternate">
+                
+                <input type="number" id="AlternateNumber" required>
+                <label for="AlternateNumber" class="address-label">Alternate Phone Number</label>
+            </div>
+            <div class="address-bar">
+            <div class="address-items">
+                <input type="number" id="pincode" required >
+                <label for="pincode" class="address-label"><ion-icon name="location"></ion-icon>Pincode</label>
+            </div>
+            <div class="address-items">
+                
+            </div>
+            <div class="address-items">
+                <input type="text" name="" id="state" required>
+                <label for="state" class="address-label">State</label>
+            </div>
+            <div class="address-items">
+                <input type="text" name="" id="city" required>
+                <label for="city" class="address-label">City</label>
+            </div>
+            </div>
+            <div class="address-items area">
+                <input type="text" id="homeNo" required>
+                <label for="homeNo" class="address-label"><ion-icon name="home"></ion-icon>  Home No , Building Name</label>
+            </div>
+            <div class="address-items area">
+                <input type="text" id="area" required>
+                <label for="area" class="address-label">Road name, Area, Colony</label>
+            </div>
+            
+            <button class="submit SaveAddress">Save Address</button>
+           
+         </div>
+         <button class="deliver-here">Deliver Here</button>
+        </div>
+        <div class="orders">
+            <div class="order-content">
+                
+            </div> 
+            <div class="price-details">
+                <div class="item-price">
+                    <div class="label">Price</div>
+                    <div class="price">$ 0</div>
+                </div>
+                <div class="discount">
+                    <div class="label">Discount</div>
+                    <div class="discount-amount">$ 0</div>
+                </div>
+                <div class="delivery-fee">
+                    <div class="label">Delivery Charges</div>
+                    <div class="delivery-cost">0</div>
+                </div>
+                <div class="total-list">
+                    <div class="label">Total Price</div>
+                    <div class="total-cost">0</div>
+                </div>
+                <div class="next">
+                    <button class="continue">Continue</button>
+                </div>
+            </div>
+        </div>
+        <div class="payment">
+    
+            <div class="payment-options">
+            <div class="payment-options-list">
+                <input type="radio" name="payment" class="payment-selection upi" id="upi"value="upi">
+                <label for="upi" class="payment-label">UPI</label>
+                <div class="upi-list">
+                    <div class="upi-header">Choose Option</div>
+                    <div class="upi-list-item">
+                        <input type="radio" class="upi-selection" name="upi" id="upi-selection" value="PhonePe">
+                        <label for="upi-selection">PhonePe</label>
+                        <div>
+                            <button class="pay1">Pay</button>
+                        </div>
+                    </div>
+                    <div class="upi-list-item">
+                        <input type="radio" class="upi-selection" name="upi" id="upi" value="custom">
+                        <label for="upi">Your UPI ID</label>
+                        <div class="your-upi">
+                            <input type="text"class="yourupi">
+                            <button class="custom-pay">Pay</button>
+                        </div>
+                    </div>
+                    <div class="upi-list-item"><label for="upi" class="secondary-label">Pay by any UPI app</label></div>
+                </div>
+            </div>
+            <div class="payment-options-list">
+                <input type="radio" name="payment" class="payment-selection wallet" id="wallet" value="wallet">
+                <label for="wallet" class="payment-label">Wallets</label>
+                <div class="wallet-list">
+                    <div class="wallet-list-item">
+                        <input type="radio" name="wallet" class="wallet-selection" id="phonepe" value="PhonePe-Wallet">
+                        <label for="phonepe">Phonepe Wallet</label>
+                    </div>
+                    <div class="wallet-list-item">
+                          <button class="pay2">Pay</button>
+                    </div>
+                    <div class="wallet-list-item coming-soon">
+                        <label for="" class="secondary-label">Coming Soon</label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="payment-options-list">
+                <input type="radio" name="payment" class="payment-selection" id="payment" value="credit">
+                <label for="payment" class="payment-label">Credit / Debit / ATM Card</label>
+                <div class="credit-card">
+                    <div class="credit-card-items card-first">
+                        <div class="card-icon-number">
+                            <input type="text" class="card-number" placeholder="xxxx xxxx xxxx xxxx" id="cardNumber" maxlength="19" oninput="formatCardNumber(this)">
+                            <ion-icon name="card-outline" class="card-icon"></ion-icon>                        </div>
+                            <label for="" class="card-number-label">Enter Card Number</label>
+                    </div>
+                    <div class="card-second">
+                       <div class="credit-card-items">
+                            <div class="dropdown">
+                                <select id="number-dropdown" class="month" name="number">
+                                    <!-- Options 1 to 12 -->
+                                    <option value="">MM</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select> 
+                               <select id="year-dropdown" name="year" class="year">
+                                <option value="">YY</option>
+                                   <script>
+                                       const startYear = 24;  // Starting year
+                                       const endYear = 35;    // Ending year
+                                       const dropdown = document.getElementById("year-dropdown");
+                               
+                                       for (let year = startYear; year <= endYear; year++) {
+                                           const option = document.createElement("option");
+                                           option.value = year;
+                                           option.textContent = year;
+                                           dropdown.appendChild(option);
+                                       }
+                                   </script>
+                                 </select>  
+
+                            </div>
+                            <label for="" class="date-label">Valid thru</label>
+                       </div>
+                       <div class="credit-card-items">
+                           <div class="combine">
+                               <input type="text" name="cvv" id="" class="cvv" placeholder="123" maxlength="3" inputmode="numeric" oninput="cvvFormat(this)">
+                               <ion-icon name="help" class="help"></ion-icon>
+                           </div>
+                           <label for="" class="cvv">CVV</label>
+                    </div>       
+                        
+                    </div>
+                    <div >
+                        <button class="pay">Pay</button>
+                    </div>
+                    <label class="secondary-label">Add and secure cards as per RBI guidelines</label>
+                </div>
+            </div>
+            <div class="payment-options-list">
+                <input type="radio" name="payment" class="payment-selection" id="net-banking" value="net-banking">
+                <label for="net-banking" class="payment-label">Net Banking</label>
+                <div class="net-banking">
+                    <div class="net-banking-header">Popular Banks</div>
+                    <div class="net-banking-list">
+                        <div class="net-banking-list-items">
+                            <input type="radio" name="banks" id="" class="net-banking-banks" value="1">
+                            <label for="" class="banks-label">HDFC Bank</label>
+                        </div>
+                        <div class="net-banking-list-items">
+                            <input type="radio" name="banks" id="" class="net-banking-banks">
+                            <label for="" class="banks-label">ICICI Bank</label>
+                        </div>
+                        <div class="net-banking-list-items">
+                            <input type="radio" name="banks" id="" class="net-banking-banks">
+                            <label for="" class="banks-label">State Bank of India</label>
+                        </div>
+                        <div class="net-banking-list-items">
+                            <input type="radio" name="banks" id="" class="net-banking-banks">
+                            <label for="" class="banks-label">Axis Bank</label>
+                        </div>
+                        <div class="net-banking-list-items">
+                            <input type="radio" name="banks" id="" class="net-banking-banks">
+                            <label for="" class="banks-label">Kotak Mahindra Bank</label>
+                        </div>  
+                    </div>
+                    <div class="other-banks">
+                        <label for="" class="other-banks-label">Other Banks</label>
+                        <select name="other" class="other-option">
+                            <option value="">-- Select Bank --</option>
+                            <option value="indusind">IndusInd Bank</option>
+                            <option value="yes">Yes Bank</option>
+                            <option value="idfc">IDFC First Bank</option>
+                            <option value="federal">Federal Bank</option>
+                            <option value="south_indian">South Indian Bank</option>
+                            <option value="rbl">RBL Bank</option>
+                            <option value="dcb">DCB Bank</option>
+                            <option value="bandhan">Bandhan Bank</option>
+                            <option value="j_k">Jammu and Kashmir Bank</option>
+                            <option value="pnb">Punjab National Bank (PNB)</option>
+                            <option value="bank_of_baroda">Bank of Baroda</option>
+                            <option value="canara_bank">Canara Bank</option>
+                            <option value="union_bank">Union Bank of India</option>
+                            <option value="indian_bank">Indian Bank</option>
+                            <option value="bank_of_india">Bank of India</option>
+                            <option value="central_bank">Central Bank of India</option>
+                            <option value="uco_bank">UCO Bank</option>
+                            <option value="bank_of_maharashtra">Bank of Maharashtra</option>
+                            <option value="indian_overseas_bank">Indian Overseas Bank</option>
+                            <option value="punjab_sind_bank">Punjab & Sind Bank</option>
+                        </select>
+                    </div>
+                    <div >
+                        <button class="pay3">Pay</button>
+                    </div>
+                    <div>
+                        <label for="" class="secondary-label">This instrument has low success, use UPI or cards for better experience.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-options-list">
+                <input type="radio" name="payment" class="payment-selection" id="">
+                <label for="payment" class="payment-label">Cash on Delivery</label>
+            </div>
+           </div>
+           <div class="update-price">
+            <div class="price-details2">
+               <div class="item-price">
+                   <div class="label">Price</div>
+                   <div class="price">$ 0</div>
+               </div>
+               <div class="discount">
+                   <div class="label">Discount</div>
+                   <div class="discount-amount">$ 0</div>
+               </div>
+               <div class="delivery-fee">
+                   <div class="label">Delivery Charges</div>
+                   <div class="delivery-cost">0</div>
+               </div>
+               <div class="total-list">
+                   <div class="label">Total Price</div>
+                   <div class="total-cost">0</div>
+               </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="order-placed">
+            <div class="payment-status">
+                <div class="box"></div>
+                <div class="label">Payement-status</div>
+                <div class="status-info">Payment Success</div>
+            </div>
+            <span class="line"></span>
+            <span class="line2"></span>
+            <div class="order-status">
+                <div class="box1"></div>
+                <div class="label">Order-status</div>
+                <div class="status-info1">Ordered Success</div>
+            </div>
+            <span class="line1"></span>
+            <span class="line3"></span>
+            <div class="order-details">
+                <div class="box2"></div>
+                <div class="label">Check Order_Details</div>
+                <a href="" class="status-info2">Click to see Order details</a>
+            </div>
+        </div>
+    </main>
+  
+    <script src="../asset/data/product.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/buy.js"></script>
+    <script src="../js/amazon.js"></script>
+    <script src="../js/wishlist.js"></script>
+
+</body>
+
+</html> 

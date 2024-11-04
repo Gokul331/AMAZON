@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cart.css">
+     <!----   ion icon link   -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <a href="./index.html">EzyMart</a>
+        </div>
+        <div class="nav-middle">
+             <div class="all">All
+                <ion-icon name="caret-down-outline" style="width: 10px;"></ion-icon>
+             </div>
+             <input type="search" class="search-bar" placeholder="Search Products">
+             <button class="search-btn"><img src="../asset/icons/search-icon.png" alt=""></button>
+        </div>
+        <div class="nav-right">
+            <div class="deliver-to">
+                <span class="deliver">
+                <ion-icon name="location-sharp" style="width: 30px; height: 20px;"></ion-icon>India</span>
+            </div>
+            <div class="info">
+                <a href="#" class="link">Hello, Gokul</a>
+                <a class="info_items info_items_wishlist" href="./wishlist.html">WISHLIST</a>
+            </div>
+             <div class="return-order-label">
+                 <p class="return-label">ORDERS</p>
+             </div>
+             <a class="cart-btn" href="./cart.html">
+                 <img src="../asset/icons/cart-icon.png" alt="">
+                 <div class="cart-count">0</div>
+                 <span class="cart-label" >Cart</span>
+             </a>
+        </div>
+        </header>
+    
+    <main id="main">
+        <div class="cart">
+            <div class="cart-title">Shopping Cart</div>
+            <div class="cart-content">
+                <div class="cart-list">
+               </div>
+                <div class="subtotal">
+                    Subtotal
+                   <div class="total">
+                    <div class="total-items">
+                        <div class="total-items-title">Total Items</div>
+                         <div class="total-items-count">0</div>
+                    </div>
+                    <div class="total-price">
+                        <div class="total-items-title">Total Price</div>
+            
+                         <div class="total-items-price">Rs.0</div>
+                    </div>
+                     <a href="buy.html"><button class="check-out" >PlaceOrder</button></a>
+                  </div>
+                </div>
+            </div>
+           </div>
+    </main>
+    <script src="../asset/data/product.js"></script>
+    <script src="../js/amazon.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/buy.js"></script>
+</body>
+
+</html> 
